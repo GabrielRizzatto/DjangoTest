@@ -1,9 +1,8 @@
-from django.http import HttpResponse
 from django.shortcuts import render
 
 
 def blog (request):
-    return HttpResponse('Blog')
+    return render(request,'blog/index.html')
 
 def exemplo (request):
-    return HttpResponse('Exemplo')
+    return render(request, "blog/exemplo.html")
